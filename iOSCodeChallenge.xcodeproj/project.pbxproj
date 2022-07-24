@@ -12,7 +12,6 @@
 		43BA4672288D49A6008554CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA4671288D49A6008554CA /* AppDelegate.swift */; };
 		43BA4674288D49A6008554CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA4673288D49A6008554CA /* SceneDelegate.swift */; };
 		43BA4676288D49A6008554CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA4675288D49A6008554CA /* ViewController.swift */; };
-		43BA4679288D49A6008554CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BA4677288D49A6008554CA /* Main.storyboard */; };
 		43BA467B288D49A9008554CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BA467A288D49A9008554CA /* Assets.xcassets */; };
 		43BA467E288D49A9008554CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BA467C288D49A9008554CA /* LaunchScreen.storyboard */; };
 		43BA4689288D49AA008554CA /* iOSCodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA4688288D49AA008554CA /* iOSCodeChallengeTests.swift */; };
@@ -47,7 +46,6 @@
 		43BA4671288D49A6008554CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43BA4673288D49A6008554CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		43BA4675288D49A6008554CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		43BA4678288D49A6008554CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43BA467A288D49A9008554CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43BA467D288D49A9008554CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43BA467F288D49A9008554CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -126,12 +124,8 @@
 		43BA4670288D49A6008554CA /* iOSCodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				43BA4671288D49A6008554CA /* AppDelegate.swift */,
-				43BA4673288D49A6008554CA /* SceneDelegate.swift */,
+				43BA46A1288D4BB8008554CA /* Supporting Files */,
 				43BA4675288D49A6008554CA /* ViewController.swift */,
-				43BA4677288D49A6008554CA /* Main.storyboard */,
-				43BA467A288D49A9008554CA /* Assets.xcassets */,
-				43BA467C288D49A9008554CA /* LaunchScreen.storyboard */,
 				43BA467F288D49A9008554CA /* Info.plist */,
 			);
 			path = iOSCodeChallenge;
@@ -154,6 +148,17 @@
 			path = iOSCodeChallengeUITests;
 			sourceTree = "<group>";
 		};
+		43BA46A1288D4BB8008554CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43BA4671288D49A6008554CA /* AppDelegate.swift */,
+				43BA4673288D49A6008554CA /* SceneDelegate.swift */,
+				43BA467A288D49A9008554CA /* Assets.xcassets */,
+				43BA467C288D49A9008554CA /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		7A0D26BED7717C8C38E36A30 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +169,6 @@
 				ACA98A06C31C22AF454C1293 /* Pods-iOSCodeChallengeTests.debug.xcconfig */,
 				064FB8808AA26DFD4F4F2401 /* Pods-iOSCodeChallengeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -279,7 +283,6 @@
 			files = (
 				43BA467E288D49A9008554CA /* LaunchScreen.storyboard in Resources */,
 				43BA467B288D49A9008554CA /* Assets.xcassets in Resources */,
-				43BA4679288D49A6008554CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,14 +449,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		43BA4677288D49A6008554CA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				43BA4678288D49A6008554CA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		43BA467C288D49A9008554CA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -592,7 +587,6 @@
 				INFOPLIST_FILE = iOSCodeChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -621,7 +615,6 @@
 				INFOPLIST_FILE = iOSCodeChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
