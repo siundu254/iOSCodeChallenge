@@ -7,7 +7,7 @@
 
 import UIKit
 
-class  BaseCoordinator: NSObject {
+class BaseCoordinator: NSObject {
     
     var completion: () -> Void = { }
     weak var parentCoordinator: BaseCoordinator?

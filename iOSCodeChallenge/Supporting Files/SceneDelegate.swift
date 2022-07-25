@@ -27,7 +27,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         coordinator = AppCoordinator(navigationController: navC, completion: nil)
         coordinator?.start()
         
-        navC.setNavigationBarHidden(true, animated: false)
         window?.rootViewController = navC
         window?.makeKeyAndVisible()
     }

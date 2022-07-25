@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		14251FE51CA130EB89CAAD57 /* Pods_iOSCodeChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 889DD8E7E35E87B45D36011A /* Pods_iOSCodeChallenge.framework */; };
 		348A776647DC4C4C3E76FCDF /* Pods_iOSCodeChallenge_iOSCodeChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36817FD4CB251C1812399791 /* Pods_iOSCodeChallenge_iOSCodeChallengeUITests.framework */; };
+		43165422288EB33700F24B7D /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43165420288EB33700F24B7D /* HomeTableViewCell.swift */; };
+		43165423288EB33700F24B7D /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43165420288EB33700F24B7D /* HomeTableViewCell.swift */; };
+		43165424288EB33700F24B7D /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43165421288EB33700F24B7D /* HomeTableViewCell.xib */; };
+		43165425288EB33700F24B7D /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43165421288EB33700F24B7D /* HomeTableViewCell.xib */; };
 		43BA4672288D49A6008554CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA4671288D49A6008554CA /* AppDelegate.swift */; };
 		43BA4674288D49A6008554CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA4673288D49A6008554CA /* SceneDelegate.swift */; };
 		43BA4676288D49A6008554CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA4675288D49A6008554CA /* ViewController.swift */; };
@@ -23,6 +27,19 @@
 		43BA46AB288D4F41008554CA /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA46A9288D4F41008554CA /* AppCoordinator.swift */; };
 		43BA46AD288D5050008554CA /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA46AC288D5050008554CA /* BaseNavigationController.swift */; };
 		43BA46AE288D5050008554CA /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA46AC288D5050008554CA /* BaseNavigationController.swift */; };
+		43CB863D288ECA27000E8580 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CB863C288ECA27000E8580 /* BaseViewController.swift */; };
+		43CB8640288EE27A000E8580 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CB863F288EE27A000E8580 /* APIRequest.swift */; };
+		43CB8641288EE27A000E8580 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CB863F288EE27A000E8580 /* APIRequest.swift */; };
+		43CB8644288EE428000E8580 /* NasaAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CB8643288EE428000E8580 /* NasaAPIModel.swift */; };
+		43CB8645288EE428000E8580 /* NasaAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CB8643288EE428000E8580 /* NasaAPIModel.swift */; };
+		43CB8647288EE8D7000E8580 /* NasaDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CB8646288EE8D7000E8580 /* NasaDataModel.swift */; };
+		43CB8648288EE8D7000E8580 /* NasaDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CB8646288EE8D7000E8580 /* NasaDataModel.swift */; };
+		43CB864A288EE99B000E8580 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CB8649288EE99B000E8580 /* HomeViewModel.swift */; };
+		43CB864B288EE99B000E8580 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CB8649288EE99B000E8580 /* HomeViewModel.swift */; };
+		43CB864F288EF7DF000E8580 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CB864E288EF7DF000E8580 /* UIImageView+Extensions.swift */; };
+		43CB8650288EF7DF000E8580 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CB864E288EF7DF000E8580 /* UIImageView+Extensions.swift */; };
+		43CB8652288EFB26000E8580 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CB8651288EFB26000E8580 /* DateFormatter+Extensions.swift */; };
+		43CB8653288EFB26000E8580 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CB8651288EFB26000E8580 /* DateFormatter+Extensions.swift */; };
 		75626F5C110BA55D160C55E6 /* Pods_iOSCodeChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1A40CCB87AA62B35526476 /* Pods_iOSCodeChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +65,8 @@
 		0BBB86F4CED0E2E55BB2A296 /* Pods-iOSCodeChallenge-iOSCodeChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSCodeChallenge-iOSCodeChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-iOSCodeChallenge-iOSCodeChallengeUITests/Pods-iOSCodeChallenge-iOSCodeChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1D1A40CCB87AA62B35526476 /* Pods_iOSCodeChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSCodeChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36817FD4CB251C1812399791 /* Pods_iOSCodeChallenge_iOSCodeChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSCodeChallenge_iOSCodeChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43165420288EB33700F24B7D /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		43165421288EB33700F24B7D /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		43BA466E288D49A6008554CA /* iOSCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BA4671288D49A6008554CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43BA4673288D49A6008554CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +82,13 @@
 		43BA46A5288D4CA2008554CA /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		43BA46A9288D4F41008554CA /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		43BA46AC288D5050008554CA /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		43CB863C288ECA27000E8580 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		43CB863F288EE27A000E8580 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		43CB8643288EE428000E8580 /* NasaAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaAPIModel.swift; sourceTree = "<group>"; };
+		43CB8646288EE8D7000E8580 /* NasaDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaDataModel.swift; sourceTree = "<group>"; };
+		43CB8649288EE99B000E8580 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		43CB864E288EF7DF000E8580 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		43CB8651288EFB26000E8580 /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
 		51DF09EA929D366D3ACFBD28 /* Pods-iOSCodeChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSCodeChallenge.release.xcconfig"; path = "Target Support Files/Pods-iOSCodeChallenge/Pods-iOSCodeChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		889DD8E7E35E87B45D36011A /* Pods_iOSCodeChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSCodeChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A922F58F659452A54295B4C6 /* Pods-iOSCodeChallenge-iOSCodeChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSCodeChallenge-iOSCodeChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-iOSCodeChallenge-iOSCodeChallengeUITests/Pods-iOSCodeChallenge-iOSCodeChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -108,6 +134,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4316541E288EB30A00F24B7D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				43CB8646288EE8D7000E8580 /* NasaDataModel.swift */,
+				43CB8649288EE99B000E8580 /* HomeViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4316541F288EB31500F24B7D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				43165420288EB33700F24B7D /* HomeTableViewCell.swift */,
+				43165421288EB33700F24B7D /* HomeTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		43BA4665288D49A6008554CA = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +177,7 @@
 		43BA4670288D49A6008554CA /* iOSCodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				43CB863E288EE264000E8580 /* Networking */,
 				43BA46A8288D4F2C008554CA /* Modules */,
 				43BA46A2288D4C5A008554CA /* Common */,
 				43BA46A1288D4BB8008554CA /* Supporting Files */,
@@ -173,8 +218,10 @@
 		43BA46A2288D4C5A008554CA /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				43CB864D288EF7BF000E8580 /* extensions */,
 				43BA46A5288D4CA2008554CA /* BaseCoordinator.swift */,
 				43BA46AC288D5050008554CA /* BaseNavigationController.swift */,
+				43CB863C288ECA27000E8580 /* BaseViewController.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -182,9 +229,37 @@
 		43BA46A8288D4F2C008554CA /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				4316541F288EB31500F24B7D /* Cells */,
+				4316541E288EB30A00F24B7D /* Models */,
 				43BA46A9288D4F41008554CA /* AppCoordinator.swift */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		43CB863E288EE264000E8580 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				43CB8642288EE289000E8580 /* Model */,
+				43CB863F288EE27A000E8580 /* APIRequest.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		43CB8642288EE289000E8580 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				43CB8643288EE428000E8580 /* NasaAPIModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		43CB864D288EF7BF000E8580 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				43CB864E288EF7DF000E8580 /* UIImageView+Extensions.swift */,
+				43CB8651288EFB26000E8580 /* DateFormatter+Extensions.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 		7A0D26BED7717C8C38E36A30 /* Pods */ = {
@@ -310,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43BA467E288D49A9008554CA /* LaunchScreen.storyboard in Resources */,
+				43165424288EB33700F24B7D /* HomeTableViewCell.xib in Resources */,
 				43BA467B288D49A9008554CA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +394,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43165425288EB33700F24B7D /* HomeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,12 +515,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43CB864F288EF7DF000E8580 /* UIImageView+Extensions.swift in Sources */,
 				43BA4676288D49A6008554CA /* ViewController.swift in Sources */,
+				43CB8652288EFB26000E8580 /* DateFormatter+Extensions.swift in Sources */,
 				43BA4672288D49A6008554CA /* AppDelegate.swift in Sources */,
+				43165422288EB33700F24B7D /* HomeTableViewCell.swift in Sources */,
 				43BA46AD288D5050008554CA /* BaseNavigationController.swift in Sources */,
 				43BA46AA288D4F41008554CA /* AppCoordinator.swift in Sources */,
+				43CB863D288ECA27000E8580 /* BaseViewController.swift in Sources */,
 				43BA4674288D49A6008554CA /* SceneDelegate.swift in Sources */,
+				43CB864A288EE99B000E8580 /* HomeViewModel.swift in Sources */,
+				43CB8640288EE27A000E8580 /* APIRequest.swift in Sources */,
 				43BA46A6288D4CA2008554CA /* BaseCoordinator.swift in Sources */,
+				43CB8647288EE8D7000E8580 /* NasaDataModel.swift in Sources */,
+				43CB8644288EE428000E8580 /* NasaAPIModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,9 +536,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43CB8650288EF7DF000E8580 /* UIImageView+Extensions.swift in Sources */,
 				43BA46AE288D5050008554CA /* BaseNavigationController.swift in Sources */,
+				43CB864B288EE99B000E8580 /* HomeViewModel.swift in Sources */,
+				43165423288EB33700F24B7D /* HomeTableViewCell.swift in Sources */,
 				43BA46AB288D4F41008554CA /* AppCoordinator.swift in Sources */,
 				43BA4689288D49AA008554CA /* iOSCodeChallengeTests.swift in Sources */,
+				43CB8648288EE8D7000E8580 /* NasaDataModel.swift in Sources */,
+				43CB8645288EE428000E8580 /* NasaAPIModel.swift in Sources */,
+				43CB8641288EE27A000E8580 /* APIRequest.swift in Sources */,
+				43CB8653288EFB26000E8580 /* DateFormatter+Extensions.swift in Sources */,
 				43BA46A7288D4CA2008554CA /* BaseCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

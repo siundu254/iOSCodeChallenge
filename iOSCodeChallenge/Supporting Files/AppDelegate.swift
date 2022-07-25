@@ -14,24 +14,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        setupCoordinator(application)
+        if #available(iOS 13.0, *) {
+            // use scene delegate
+        } else {
+            setupCoordinator(application)
+        }
         return true
     }
     
     private func setupCoordinator(_ application: UIApplication) {
-        var window = application.windows.first(where: { $0.isKeyWindow })
-        window?.resignKey()
-        
         let navC = BaseNavigationController()
+        
         coordinator = AppCoordinator(navigationController: navC, completion: nil)
         coordinator?.start()
         
-        window = nil
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navC
         window?.makeKeyAndVisible()
-        
-        self.window = window
     }
 
     // MARK: UISceneSession Lifecycle

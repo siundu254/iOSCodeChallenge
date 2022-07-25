@@ -10,6 +10,6 @@ import Foundation
 class AppCoordinator: BaseCoordinator {
     override func start() {
         let vc = ViewController()
-        navigationController?.setViewControllers([vc], animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
