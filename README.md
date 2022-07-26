@@ -89,11 +89,10 @@ This section contains an overview of this topic — please refer here for more c
 
 KEVIN SIUNDU - siundu344@gmail.com
 
-Project Link: [https://github.com/rahmakevo/githubUsersTask](https://github.com/rahmakevo/githubUsersTask)
+Project Link: [https://github.com/rahmakevo/iOSCodeChallenge](https://github.com/rahmakevo/iOSCodeChallenge)
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
-[https://github.com/yourname/github-link](https://github.com/dbader/)
 
 [swift-image]:https://img.shields.io/badge/swift-3.0-orange.svg
 [swift-url]: https://swift.org/
