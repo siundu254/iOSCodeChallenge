@@ -27,8 +27,8 @@ class BaseCoordinator: NSObject {
         navigationController?.pushViewController(viewController, animated: animated)
     }
     
-    func pop(animated: Bool = true) {
-        navigationController?.popViewController(animated: animated)
+    func present(viewController: UIViewController, completion: (() -> Void)?) {
+        navigationController?.present(viewController, animated: true)
     }
     
     func finishWorkflow() {

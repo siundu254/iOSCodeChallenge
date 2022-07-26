@@ -6,12 +6,12 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var dataImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var nameDescLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,14 +21,12 @@ class HomeTableViewCell: UITableViewCell {
     }
     
     private func configureViews() {
+        
         nameLabel.textColor = .black
         nameLabel.font = UIFont.boldSystemFont(ofSize: 16)
         
         nameDescLabel.textColor = .black
         nameDescLabel.font = UIFont.systemFont(ofSize: 14)
-        
-        dateLabel.textColor = .black
-        dateLabel.font = UIFont.systemFont(ofSize: 14)
         
         dataImage.clipsToBounds = true
         dataImage.contentMode = .scaleAspectFill
@@ -40,8 +38,18 @@ class HomeTableViewCell: UITableViewCell {
     
     func configure(withModel model: NasaDataModel) {
         nameLabel.text = model.title
-        nameDescLabel.text = model.photographer
-        dateLabel.text = model.date
-        dataImage.loadFrom(URLAddress: model.image)
+        nameDescLabel.text = "\(model.photographer)  |  \(model.date)"
+        dataImage.kf.setImage(
+            with: URL(string: model.image),
+            options: [
+                .scaleFactor(UIScreen.main.scale),
+                .transition(.fade(1)),
+                .cacheOriginalImage]
+        )
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        dataImage.image = nil
     }
 }

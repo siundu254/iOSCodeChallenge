@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -31,26 +30,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMV-hF-9jL">
-                        <rect key="frame" x="86.5" y="50.5" width="100" height="21"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="100" id="CFL-bJ-vJN"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m7P-mB-hp5">
-                        <rect key="frame" x="201.5" y="48" width="1.5" height="37"/>
-                        <color key="backgroundColor" systemColor="separatorColor"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="1.5" id="2Fq-oM-BlD"/>
-                        </constraints>
-                    </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Anu-WO-6mj">
-                        <rect key="frame" x="218" y="50.5" width="100" height="21"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="100" id="QxV-P1-IVC"/>
-                        </constraints>
+                        <rect key="frame" x="86.5" y="50.5" width="277.5" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -58,18 +38,14 @@
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="m7P-mB-hp5" firstAttribute="top" secondItem="eVe-LV-0Vk" secondAttribute="bottom" constant="7.5" id="H3M-Nc-I4v"/>
                     <constraint firstItem="Wkl-p9-OoQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="JaZ-29-azR"/>
-                    <constraint firstItem="Anu-WO-6mj" firstAttribute="leading" secondItem="m7P-mB-hp5" secondAttribute="trailing" constant="15" id="WFv-b7-aBa"/>
-                    <constraint firstItem="m7P-mB-hp5" firstAttribute="leading" secondItem="PMV-hF-9jL" secondAttribute="trailing" constant="15" id="ZsS-o6-KdE"/>
                     <constraint firstAttribute="trailing" secondItem="eVe-LV-0Vk" secondAttribute="trailing" constant="15" id="a8v-L2-8qR"/>
-                    <constraint firstAttribute="bottom" secondItem="m7P-mB-hp5" secondAttribute="bottom" constant="15" id="eqx-fC-1My"/>
+                    <constraint firstAttribute="trailing" secondItem="PMV-hF-9jL" secondAttribute="trailing" constant="15" id="aGi-Am-RjA"/>
                     <constraint firstItem="Wkl-p9-OoQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="f5D-Hn-GdW"/>
                     <constraint firstItem="eVe-LV-0Vk" firstAttribute="leading" secondItem="Wkl-p9-OoQ" secondAttribute="trailing" constant="7.5" id="h7c-rG-YHJ"/>
                     <constraint firstItem="PMV-hF-9jL" firstAttribute="top" secondItem="eVe-LV-0Vk" secondAttribute="bottom" constant="10" id="iTe-AR-tgd"/>
                     <constraint firstItem="PMV-hF-9jL" firstAttribute="leading" secondItem="Wkl-p9-OoQ" secondAttribute="trailing" constant="7.5" id="ilA-FC-gka"/>
                     <constraint firstItem="eVe-LV-0Vk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="ny1-DF-b8p"/>
-                    <constraint firstItem="Anu-WO-6mj" firstAttribute="top" secondItem="eVe-LV-0Vk" secondAttribute="bottom" constant="10" id="q1L-nA-agS"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -77,16 +53,10 @@
             <connections>
                 <outlet property="backgroundView" destination="H2p-sc-9uM" id="yVs-Y8-ikl"/>
                 <outlet property="dataImage" destination="Wkl-p9-OoQ" id="2f2-Dw-Vy0"/>
-                <outlet property="dateLabel" destination="Anu-WO-6mj" id="D22-k7-VH3"/>
                 <outlet property="nameDescLabel" destination="PMV-hF-9jL" id="n7e-P1-EgU"/>
                 <outlet property="nameLabel" destination="eVe-LV-0Vk" id="zfr-rn-ROc"/>
             </connections>
             <point key="canvasLocation" x="-651" y="-40"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <systemColor name="separatorColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

@@ -8,6 +8,7 @@ target 'iOSCodeChallenge' do
   # Pods for iOSCodeChallenge
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'Kingfisher'
 
   target 'iOSCodeChallengeTests' do
     inherit! :search_paths

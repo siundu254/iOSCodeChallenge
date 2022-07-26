@@ -13,9 +13,14 @@
 		43165423288EB33700F24B7D /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43165420288EB33700F24B7D /* HomeTableViewCell.swift */; };
 		43165424288EB33700F24B7D /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43165421288EB33700F24B7D /* HomeTableViewCell.xib */; };
 		43165425288EB33700F24B7D /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43165421288EB33700F24B7D /* HomeTableViewCell.xib */; };
+		43AC3E4A288F258400B15438 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AC3E49288F258400B15438 /* DetailViewController.swift */; };
+		43AC3E4D288F580200B15438 /* ActivityIndicatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AC3E4C288F580200B15438 /* ActivityIndicatorProtocol.swift */; };
+		43AC3E4E288F580200B15438 /* ActivityIndicatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AC3E4C288F580200B15438 /* ActivityIndicatorProtocol.swift */; };
+		43AC3E50288F585900B15438 /* ActivityIndicatorProtocol+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AC3E4F288F585900B15438 /* ActivityIndicatorProtocol+Extensions.swift */; };
+		43AC3E51288F585900B15438 /* ActivityIndicatorProtocol+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AC3E4F288F585900B15438 /* ActivityIndicatorProtocol+Extensions.swift */; };
 		43BA4672288D49A6008554CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA4671288D49A6008554CA /* AppDelegate.swift */; };
 		43BA4674288D49A6008554CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA4673288D49A6008554CA /* SceneDelegate.swift */; };
-		43BA4676288D49A6008554CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA4675288D49A6008554CA /* ViewController.swift */; };
+		43BA4676288D49A6008554CA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA4675288D49A6008554CA /* HomeViewController.swift */; };
 		43BA467B288D49A9008554CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BA467A288D49A9008554CA /* Assets.xcassets */; };
 		43BA467E288D49A9008554CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BA467C288D49A9008554CA /* LaunchScreen.storyboard */; };
 		43BA4689288D49AA008554CA /* iOSCodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA4688288D49AA008554CA /* iOSCodeChallengeTests.swift */; };
@@ -67,10 +72,13 @@
 		36817FD4CB251C1812399791 /* Pods_iOSCodeChallenge_iOSCodeChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSCodeChallenge_iOSCodeChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43165420288EB33700F24B7D /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		43165421288EB33700F24B7D /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		43AC3E49288F258400B15438 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		43AC3E4C288F580200B15438 /* ActivityIndicatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorProtocol.swift; sourceTree = "<group>"; };
+		43AC3E4F288F585900B15438 /* ActivityIndicatorProtocol+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActivityIndicatorProtocol+Extensions.swift"; sourceTree = "<group>"; };
 		43BA466E288D49A6008554CA /* iOSCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BA4671288D49A6008554CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43BA4673288D49A6008554CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		43BA4675288D49A6008554CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		43BA4675288D49A6008554CA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		43BA467A288D49A9008554CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43BA467D288D49A9008554CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43BA467F288D49A9008554CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -152,6 +160,32 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		43AC3E47288F256300B15438 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4316541F288EB31500F24B7D /* Cells */,
+				4316541E288EB30A00F24B7D /* Models */,
+				43BA4675288D49A6008554CA /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		43AC3E48288F257400B15438 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				43AC3E49288F258400B15438 /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		43AC3E4B288F57E400B15438 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				43AC3E4C288F580200B15438 /* ActivityIndicatorProtocol.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
 		43BA4665288D49A6008554CA = {
 			isa = PBXGroup;
 			children = (
@@ -181,7 +215,6 @@
 				43BA46A8288D4F2C008554CA /* Modules */,
 				43BA46A2288D4C5A008554CA /* Common */,
 				43BA46A1288D4BB8008554CA /* Supporting Files */,
-				43BA4675288D49A6008554CA /* ViewController.swift */,
 				43BA467F288D49A9008554CA /* Info.plist */,
 			);
 			path = iOSCodeChallenge;
@@ -218,6 +251,7 @@
 		43BA46A2288D4C5A008554CA /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				43AC3E4B288F57E400B15438 /* protocols */,
 				43CB864D288EF7BF000E8580 /* extensions */,
 				43BA46A5288D4CA2008554CA /* BaseCoordinator.swift */,
 				43BA46AC288D5050008554CA /* BaseNavigationController.swift */,
@@ -229,8 +263,8 @@
 		43BA46A8288D4F2C008554CA /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				4316541F288EB31500F24B7D /* Cells */,
-				4316541E288EB30A00F24B7D /* Models */,
+				43AC3E48288F257400B15438 /* Detail */,
+				43AC3E47288F256300B15438 /* Home */,
 				43BA46A9288D4F41008554CA /* AppCoordinator.swift */,
 			);
 			path = Modules;
@@ -258,6 +292,7 @@
 			children = (
 				43CB864E288EF7DF000E8580 /* UIImageView+Extensions.swift */,
 				43CB8651288EFB26000E8580 /* DateFormatter+Extensions.swift */,
+				43AC3E4F288F585900B15438 /* ActivityIndicatorProtocol+Extensions.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -516,17 +551,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				43CB864F288EF7DF000E8580 /* UIImageView+Extensions.swift in Sources */,
-				43BA4676288D49A6008554CA /* ViewController.swift in Sources */,
+				43BA4676288D49A6008554CA /* HomeViewController.swift in Sources */,
 				43CB8652288EFB26000E8580 /* DateFormatter+Extensions.swift in Sources */,
 				43BA4672288D49A6008554CA /* AppDelegate.swift in Sources */,
 				43165422288EB33700F24B7D /* HomeTableViewCell.swift in Sources */,
 				43BA46AD288D5050008554CA /* BaseNavigationController.swift in Sources */,
+				43AC3E4D288F580200B15438 /* ActivityIndicatorProtocol.swift in Sources */,
 				43BA46AA288D4F41008554CA /* AppCoordinator.swift in Sources */,
 				43CB863D288ECA27000E8580 /* BaseViewController.swift in Sources */,
 				43BA4674288D49A6008554CA /* SceneDelegate.swift in Sources */,
 				43CB864A288EE99B000E8580 /* HomeViewModel.swift in Sources */,
 				43CB8640288EE27A000E8580 /* APIRequest.swift in Sources */,
 				43BA46A6288D4CA2008554CA /* BaseCoordinator.swift in Sources */,
+				43AC3E4A288F258400B15438 /* DetailViewController.swift in Sources */,
+				43AC3E50288F585900B15438 /* ActivityIndicatorProtocol+Extensions.swift in Sources */,
 				43CB8647288EE8D7000E8580 /* NasaDataModel.swift in Sources */,
 				43CB8644288EE428000E8580 /* NasaAPIModel.swift in Sources */,
 			);
@@ -538,9 +576,11 @@
 			files = (
 				43CB8650288EF7DF000E8580 /* UIImageView+Extensions.swift in Sources */,
 				43BA46AE288D5050008554CA /* BaseNavigationController.swift in Sources */,
+				43AC3E4E288F580200B15438 /* ActivityIndicatorProtocol.swift in Sources */,
 				43CB864B288EE99B000E8580 /* HomeViewModel.swift in Sources */,
 				43165423288EB33700F24B7D /* HomeTableViewCell.swift in Sources */,
 				43BA46AB288D4F41008554CA /* AppCoordinator.swift in Sources */,
+				43AC3E51288F585900B15438 /* ActivityIndicatorProtocol+Extensions.swift in Sources */,
 				43BA4689288D49AA008554CA /* iOSCodeChallengeTests.swift in Sources */,
 				43CB8648288EE8D7000E8580 /* NasaDataModel.swift in Sources */,
 				43CB8645288EE428000E8580 /* NasaAPIModel.swift in Sources */,
