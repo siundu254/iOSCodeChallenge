@@ -40,6 +40,8 @@ class HomeViewController: BaseViewController, ActivityIndicatorProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        fetchData()
+        
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "The Milky Way"
         
@@ -68,20 +70,28 @@ class HomeViewController: BaseViewController, ActivityIndicatorProtocol {
     }
     
     private func bindUI() {
-        homeViewModel.nasaDataViewModelObserver.subscribe(
-            onNext: { [weak self] nasa in
-                guard let self = self else { return }
-                self.nasaList.accept(nasa)
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
+        homeViewModel.nasaDataViewModelObserver
+            .do(
+                onDispose: { [weak self] in
+                    guard let self = self else { return }
+                    self.hideActivityIndicator()
+                    self.presentErrorAlert("There was an error... Try Again!")
                 }
-                self.hideActivityIndicator()
-            },
-            onError: { [weak self] error in
-                guard let self = self else { return }
-                self.hideActivityIndicator()
-                self.handleError(error)
-            }
+            )
+            .subscribe(
+                onNext: { [weak self] nasa in
+                    guard let self = self else { return }
+                    self.nasaList.accept(nasa)
+                    DispatchQueue.main.async {
+                        self.tableView.reloadData()
+                    }
+                    self.hideActivityIndicator()
+                },
+                onError: { [weak self] error in
+                    guard let self = self else { return }
+                    self.hideActivityIndicator()
+                    self.handleError(error)
+                }
         ).disposed(by: disposebag)
     }
     
