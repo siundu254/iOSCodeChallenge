@@ -33,10 +33,12 @@ class HomeViewmodel {
                     let desc = collection.collection.items[i].data[0].description
                     let date = collection.collection.items[i].data[0].date_created
                     let photographer = collection.collection.items[i].data[0].photographer
+                                        
                     
+                    let formattedDate = "\(Date().toString(date))"
                     let data = NasaDataModel(
                         title: name,
-                        date: date,
+                        date: "\(formattedDate)",
                         image: image,
                         description: desc,
                         photographer: photographer ?? "N/A"

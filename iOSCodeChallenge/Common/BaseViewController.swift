@@ -23,11 +23,11 @@ class BaseViewController: UIViewController {
         
         // Apply a red background.
         customNavBarAppearance.configureWithOpaqueBackground()
-        customNavBarAppearance.backgroundColor = .gray
+        customNavBarAppearance.backgroundColor = UIColor(hex: "#F9F9F9F0")
         
         // Apply white colored normal and large titles.
-        customNavBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
-        customNavBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        customNavBarAppearance.titleTextAttributes = [.foregroundColor: UIColor(hex: "#151515") ?? UIColor.black]
+        customNavBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor(hex: "#151515") ?? UIColor.black]
         
         return customNavBarAppearance
     }

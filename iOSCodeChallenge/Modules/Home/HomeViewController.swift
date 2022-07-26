@@ -34,18 +34,19 @@ class HomeViewController: BaseViewController, ActivityIndicatorProtocol {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        showActivityIndicator()
+        if nasaList.value.count <= 0 {
+            showActivityIndicator()
+        }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         fetchData()
         
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "The Milky Way"
         
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor(hex: "#E5E5E5")
         refreshControl.addTarget(self, action: #selector(onRefresh(_:)), for: .valueChanged)
         
         configureTableView()

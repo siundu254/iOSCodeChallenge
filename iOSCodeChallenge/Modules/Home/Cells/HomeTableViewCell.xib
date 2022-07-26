@@ -23,14 +23,14 @@
                             <constraint firstAttribute="height" constant="64" id="uS0-cc-1gC"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVe-LV-0Vk">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVe-LV-0Vk">
                         <rect key="frame" x="86.5" y="15" width="277.5" height="25.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMV-hF-9jL">
-                        <rect key="frame" x="86.5" y="50.5" width="277.5" height="21"/>
+                        <rect key="frame" x="86.5" y="45.5" width="277.5" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -43,7 +43,7 @@
                     <constraint firstAttribute="trailing" secondItem="PMV-hF-9jL" secondAttribute="trailing" constant="15" id="aGi-Am-RjA"/>
                     <constraint firstItem="Wkl-p9-OoQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="f5D-Hn-GdW"/>
                     <constraint firstItem="eVe-LV-0Vk" firstAttribute="leading" secondItem="Wkl-p9-OoQ" secondAttribute="trailing" constant="7.5" id="h7c-rG-YHJ"/>
-                    <constraint firstItem="PMV-hF-9jL" firstAttribute="top" secondItem="eVe-LV-0Vk" secondAttribute="bottom" constant="10" id="iTe-AR-tgd"/>
+                    <constraint firstItem="PMV-hF-9jL" firstAttribute="top" secondItem="eVe-LV-0Vk" secondAttribute="bottom" constant="5" id="iTe-AR-tgd"/>
                     <constraint firstItem="PMV-hF-9jL" firstAttribute="leading" secondItem="Wkl-p9-OoQ" secondAttribute="trailing" constant="7.5" id="ilA-FC-gka"/>
                     <constraint firstItem="eVe-LV-0Vk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="ny1-DF-b8p"/>
                 </constraints>

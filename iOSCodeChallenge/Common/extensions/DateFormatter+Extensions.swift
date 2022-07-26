@@ -8,9 +8,15 @@
 import UIKit
 
 extension Date {
-    func dayMontYY() -> String {
+    func toString(_ date: String) -> String {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        formatter.dateFormat = "dd MMM, yyyy"
+        
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "d MMM, yyyy"
-        return "\(dateFormatter.string(from: self))"
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        
+        let date: Date? = dateFormatter.date(from: date)
+        return formatter.string(from: date!)
     }
 }

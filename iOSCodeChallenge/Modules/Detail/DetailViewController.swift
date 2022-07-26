@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class DetailViewController: BaseViewController {
+class DetailViewController: UIViewController {
     
     var nasa: NasaDataModel?
     
@@ -58,7 +58,12 @@ class DetailViewController: BaseViewController {
     
     private func setupNavBar() {
         navigationItem.largeTitleDisplayMode = .never
+        let backButton = UIBarButtonItem()
+        backButton.title = "The Milky Way"
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
     }
+    
+    private func goBack() {}
     
     private func setupViews() {
         imageView.kf.setImage(
@@ -85,10 +90,10 @@ class DetailViewController: BaseViewController {
             titleLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 20),
             titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
             titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 10),
-            subTitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 10),
+            subTitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 5),
             subTitleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
             subTitleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 10),
-            descriptionLabel.topAnchor.constraint(equalTo: subTitleLabel.bottomAnchor, constant: 15),
+            descriptionLabel.topAnchor.constraint(equalTo: subTitleLabel.bottomAnchor, constant: 25),
             descriptionLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
             descriptionLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 10),
         ])

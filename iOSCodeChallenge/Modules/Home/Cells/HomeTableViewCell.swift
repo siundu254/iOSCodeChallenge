@@ -21,8 +21,9 @@ class HomeTableViewCell: UITableViewCell {
     }
     
     private func configureViews() {
-        
         nameLabel.textColor = .black
+        nameLabel.numberOfLines = 0
+        nameLabel.lineBreakMode = .byWordWrapping
         nameLabel.font = UIFont.boldSystemFont(ofSize: 16)
         
         nameDescLabel.textColor = .black
@@ -38,7 +39,7 @@ class HomeTableViewCell: UITableViewCell {
     
     func configure(withModel model: NasaDataModel) {
         nameLabel.text = model.title
-        nameDescLabel.text = "\(model.photographer)  |  \(model.date)"
+        nameDescLabel.text = "\(model.photographer) | \(model.date)"
         dataImage.kf.setImage(
             with: URL(string: model.image),
             options: [
