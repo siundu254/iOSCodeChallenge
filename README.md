@@ -66,20 +66,10 @@ To keep all those hundreds of source files from ending up in the same directory,
     ├─ Common Files
     
 ## Architecture
- * [Model-View-ViewModel-Coordinator](MVVM-C)
+ ### Model-View-ViewModel-Coordinator (MVVM-C)
  * Motivated by "massive view controllers": MVVM considers `UIViewController` subclasses part of the View and keeps them slim by maintaining all state in the ViewModel.
- * To learn more about it, check out Bob Spryn's [fantastic introduction][sprynthesis-mvvm].
+ * To learn more about it, check out Bob Spryn's [fantastic introduction - sprynthesis-mvvm].
  * Coordinators are used to help in easy navigation between view controllers
-
-## Contributions
-
-This section contains an overview of this topic — please refer here for more comprehensive information:
-
-- [iOS Developer Library: Xcode Concepts][apple-xcode-concepts]
-- [Samantha Marshall: Managing Xcode][pewpew-managing-xcode]
-
-[apple-xcode-concepts]: https://developer.apple.com/library/ios/featuredarticles/XcodeConcepts/
-[pewpew-managing-xcode]: http://pewpewthespells.com/blog/managing_xcode.html
   
 <!-- CONTACT -->
 ## Contact
