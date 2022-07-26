@@ -13,13 +13,13 @@ The project demonstrates Fetching data, parsing model entities from JSON, Use of
 
 ### Features
 
-- [x] Home View
+- [x] Home View :
       * Display Loading View on Initial Loading
       * Fetch nasa data asynchronously
       * Update UI accordingly
       * Handle Error States
       * Test View Model to assert data is not nil
-- [x] Detail View
+- [x] Detail View :
       * Display a detail view of the nasa images info
       * Handle smoooth back navigation
 
