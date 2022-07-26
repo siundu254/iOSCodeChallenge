@@ -14,14 +14,14 @@ The project demonstrates Fetching data, parsing model entities from JSON, Use of
 ### Features
 
 - [x] Home View
-      - Display Loading View on Initial Loading
-      - Fetch nasa data asynchronously
-      - Update UI accordingly
-      - Handle Error States
-      - Test View Model to assert data is not nil
+      * Display Loading View on Initial Loading
+      * Fetch nasa data asynchronously
+      * Update UI accordingly
+      * Handle Error States
+      * Test View Model to assert data is not nil
 - [x] Detail View
-      - Display a detail view of the nasa images info
-      - Handle smoooth back navigation
+      * Display a detail view of the nasa images info
+      * Handle smoooth back navigation
 
 ## Requirements
 
@@ -30,8 +30,8 @@ The project demonstrates Fetching data, parsing model entities from JSON, Use of
 
 ### Built With
 
-Major frameworks used when building this project :
-* [Xcode 13](https://developer.apple.com/xcode/)
+Language used when building this project :
+
 * [Swift 5](https://swift.org/blog/swift-5-released/)
 
 ### Dependency Management
