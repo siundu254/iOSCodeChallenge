@@ -19,20 +19,20 @@ The project demonstrates Fetching data, parsing model entities from JSON, Use of
   * Update UI accordingly
   * Handle Error States
   * Test View Model to assert data is not nil
-- [x] Detail View :
-      * Display a detail view of the nasa images info
-      * Handle smoooth back navigation
+* Detail View :
+  * Display a detail view of the nasa images info
+  * Handle smoooth back navigation
 
 ## Requirements
 
-- iOS 13.0+
-- Xcode 13.0+
+- [x] iOS 13.0+
+- [x] Xcode 13.0+
 
 ### Built With
 
 Language used when building this project :
 
-* [Swift 5](https://swift.org/blog/swift-5-released/)
+- [x] [Swift 5](https://swift.org/blog/swift-5-released/)
 
 ### Dependency Management
 
